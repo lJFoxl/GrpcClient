@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace= "TestGrpc";
+package agent;
+service TestGrpcService{
+	rpc GetCommand (TestRequest) returns (TestCommand);
+}
+
+message TestRequest{
+	string Name=1;
+	bool IsActive=2;
+	TestObject TestList=3;
+}
+message TestCommand{
+	string Command=1;
+	bool IsActive=2;
+
+}message TestObject{
+	string phone=1;
+}

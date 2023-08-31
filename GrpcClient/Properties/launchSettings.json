@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GrpcClient": {
+      "commandName": "Project",
+      "applicationUrl": "https://lockalhost:7001;http://lockalhost:7000"
+    }
+  }
+}
